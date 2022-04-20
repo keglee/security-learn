@@ -1,10 +1,8 @@
 package com.iversonx.security_learn.service;
 
-import com.iversonx.security_learn.entity.DcUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.AccountExpiredException;
-import org.springframework.security.authentication.AccountStatusException;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,7 +18,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AuthenticationProviderService implements AuthenticationProvider {
     @Autowired
-    private DcUserService userDetailsService;
+    private UserService userDetailsService;
     
     @Autowired
     @Qualifier("md5PasswordEncoder")
