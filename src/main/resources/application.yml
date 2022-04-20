@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: security-learn
+  datasource:
+    url: jdbc:mysql://10.1.9.5:3306/dc_ptlogin?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong&&useLegacyDatetimeCode=false
+    username: root
+    password: DataEye2020@mysql
+    initialization-mode: always
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
