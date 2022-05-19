@@ -1,0 +1,10 @@
+server:
+  port: 58080
+
+spring:
+  application:
+    name: sample-01
+  security:
+    user:
+      name: admin
+      password: 123456

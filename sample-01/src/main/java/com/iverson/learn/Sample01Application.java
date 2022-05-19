@@ -1,15 +1,11 @@
-package com.iversonx.security_learn;
+package com.iverson.learn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- *
- **/
 @SpringBootApplication
-public class Application {
-    
+public class Sample01Application {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Sample01Application.class, args);
     }
 }
