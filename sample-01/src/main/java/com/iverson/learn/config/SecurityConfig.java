@@ -18,6 +18,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login.html")
                 .loginProcessingUrl("/doLogin")
+                .usernameParameter("uname")
+                .passwordParameter("passwd")
                 .defaultSuccessUrl("/index")
                 // 此次确保loginPage与loginProcessUrl被所有人访问，如果不配置，那么loginPage和loginProcessUrl都需要认证
                 .permitAll()
