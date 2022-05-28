@@ -10,7 +10,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sample-01</module>
+        <module>multiple-datasource-sample</module>
     </modules>
+    
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
