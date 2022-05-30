@@ -1,0 +1,6 @@
+server:
+  port: 58080
+
+spring:
+  application:
+    name: multiple-datasource-sample
