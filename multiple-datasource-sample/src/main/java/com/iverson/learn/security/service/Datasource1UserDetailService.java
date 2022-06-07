@@ -1,10 +1,9 @@
-package com.iverson.learn.service;
+package com.iverson.learn.security.service;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,8 +11,8 @@ import java.util.List;
 /**
  *
  **/
-public class Datasource2UserDetailService implements UserDetailsService {
-    private final List<String> usernameList = Arrays.asList("admin","root");
+public class Datasource1UserDetailService implements UserDetailsService {
+    private final List<String> usernameList = Arrays.asList("test","test2","test3");
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         boolean exist = false;
         for(String item : usernameList) {
@@ -26,6 +25,6 @@ public class Datasource2UserDetailService implements UserDetailsService {
         if(!exist) {
             throw new UsernameNotFoundException("用户不存在");
         }
-        return User.withUsername(username).authorities("ADMIN").password("{noop}123456").build();
+        return User.withUsername(username).authorities("TEST").password("{noop}123456").build();
     }
 }

@@ -11,6 +11,7 @@
     <modules>
         <module>sample-01</module>
         <module>multiple-datasource-sample</module>
+        <module>captcha-sample</module>
     </modules>
     
     <properties>

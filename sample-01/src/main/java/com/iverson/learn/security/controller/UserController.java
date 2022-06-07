@@ -1,4 +1,4 @@
-package com.iverson.learn.controller;
+package com.iverson.learn.security.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
