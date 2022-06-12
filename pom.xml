@@ -12,10 +12,16 @@
         <module>sample-01</module>
         <module>multiple-datasource-sample</module>
         <module>captcha-sample</module>
+        <module>object-post-processor-sample</module>
+        <module>custom-user-sample</module>
     </modules>
     
     <properties>
         <java.version>1.8</java.version>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8></maven.compiler.compilerVersion>
     </properties>
 
     <dependencyManagement>

@@ -1,0 +1,5 @@
+server:
+  port: 58080
+spring:
+  application:
+    name: customize-user-sample
