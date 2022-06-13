@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: multiple-chain-sample
+
+server:
+  port: 58080

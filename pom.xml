@@ -14,6 +14,7 @@
         <module>captcha-sample</module>
         <module>object-post-processor-sample</module>
         <module>customize-user-sample</module>
+        <module>multiple-chain-sample</module>
     </modules>
     
     <properties>
