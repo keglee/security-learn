@@ -13,7 +13,7 @@
         <module>multiple-datasource-sample</module>
         <module>captcha-sample</module>
         <module>object-post-processor-sample</module>
-        <module>custom-user-sample</module>
+        <module>customize-user-sample</module>
     </modules>
     
     <properties>
