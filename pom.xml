@@ -15,6 +15,7 @@
         <module>object-post-processor-sample</module>
         <module>customize-user-sample</module>
         <module>multiple-chain-sample</module>
+        <module>json-login-sample</module>
     </modules>
     
     <properties>
