@@ -1,0 +1,10 @@
+server:
+  port: 58080
+
+spring:
+  application:
+    name: password-upgrade-sample
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/security_demo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong&&useLegacyDatetimeCode=false

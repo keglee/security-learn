@@ -16,6 +16,7 @@
         <module>customize-user-sample</module>
         <module>multiple-chain-sample</module>
         <module>json-login-sample</module>
+        <module>password-upgrade-sample</module>
     </modules>
     
     <properties>
