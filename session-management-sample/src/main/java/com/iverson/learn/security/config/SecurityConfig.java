@@ -24,6 +24,8 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated()
                 .and()
                 .formLogin()
+                .defaultSuccessUrl("/index")
+                .permitAll()
                 .and()
                 .csrf().disable()
                 .sessionManagement()
