@@ -17,6 +17,7 @@
         <module>multiple-chain-sample</module>
         <module>json-login-sample</module>
         <module>password-upgrade-sample</module>
+        <module>session-management-sample</module>
     </modules>
     
     <properties>
