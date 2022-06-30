@@ -4,3 +4,16 @@ server:
 spring:
   application:
     name: session-management-sample
+  session:
+    store-type: redis
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/security_demo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Hongkong&&useLegacyDatetimeCode=false
+    password: 123456
+    username: root
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 10.1.9.5
+    port: 6379
+    password: dataeye@redis
+
