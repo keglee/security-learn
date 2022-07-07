@@ -18,6 +18,7 @@
         <module>json-login-sample</module>
         <module>password-upgrade-sample</module>
         <module>session-management-sample</module>
+        <module>authority-sample</module>
     </modules>
     
     <properties>
