@@ -19,6 +19,7 @@
         <module>password-upgrade-sample</module>
         <module>session-management-sample</module>
         <module>authority-sample</module>
+        <module>simple-example</module>
     </modules>
     
     <properties>
