@@ -112,8 +112,12 @@ public class WebSecurityConfig3 extends WebSecurityConfigurerAdapter {
 
 ```
 
-先简单对比以上三种方式，后续再进一步分析这几种方式：
+先简单对比以上三种方式：
 
 - 方式一和方式二的作用都是为全局AuthenticationManager配置一个UserDetailsService实例，如果同时使用这两种方式，则以第一种方式为准。
-Spring Security默认策略是如果`configure(AuthenticationManagerBuilder)`方法被重写，则使用传入`AuthenticationManagerBuilder`来构建`AuthenticationManager`；否则，按类型自动构建`AuthenticationManager`
-- 方式三配置的是一个局部AuthenticationManager配置。
+Spring Security默认策略是如果`configure(AuthenticationManagerBuilder)`方法被重写，则使用传入`AuthenticationManagerBuilder`来
+构建`AuthenticationManager`；否则，按类型自动构建`AuthenticationManager`。
+- 方式三配置的是一个局部AuthenticationManager配置。如果同时使用第一种和第三种配置方式，当进行用户身份验证时，首先会通过局部的
+`AuthenticationManager`对象进行验证，如果验证失败，则会调用其parent也就是全局的`AuthenticationManager`再次进行验证。
+
+
