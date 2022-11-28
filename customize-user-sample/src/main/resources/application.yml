@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: customize-user-sample
+
+customize:
+  user: 4
