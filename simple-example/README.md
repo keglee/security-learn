@@ -1,8 +1,16 @@
-# 案例：Quick Start
+# 一、Spring Security 快速入门
 
 这是一个简单的Spring Security示例，主要功能：开启访问限制，并且所有请求都需要进行认证；同时开启了表单登录，以及在`application.yml`中配置了用户名和密码。
 
 如果不配置用户名和密码，则默认的用户名为user，在启动服务时自动生成默认密码并输出到日志
+
+## 版本依赖
+
+后续内容都以下列版本为基础
+
+- JDK 1.8
+- Spring Boot 2.4.0
+- Spring Security 5.4.1
 
 ## 主要代码
 
