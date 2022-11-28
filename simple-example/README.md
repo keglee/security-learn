@@ -28,6 +28,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ```
 
+```yaml
+
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
+
+```
+
 `http.authorizeRequests()`用于开启访问限制；`anyRequest().authenticated()`表示对所有请求都需要经过认证才能访问。
 
 `http.formLogin()`用于开启表单登录。
