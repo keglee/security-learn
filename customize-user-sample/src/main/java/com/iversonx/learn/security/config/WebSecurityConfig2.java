@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.web.filter.DelegatingFilterProxy;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +26,8 @@ public class WebSecurityConfig2 extends WebSecurityConfigurerAdapter {
     @Override
     @Bean
     protected UserDetailsService userDetailsService() {
-        return new CustomizeUserDetailsService(Collections.singletonList("user2"));
+        DelegatingFilterProxy proxy;
+        return new CustomizeUserDetailsService(Collections.singletonList("user"));
     }
 
     @Override

@@ -5,4 +5,4 @@ spring:
     name: customize-user-sample
 
 customize:
-  user: 4
+  user: 2
