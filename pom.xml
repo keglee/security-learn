@@ -20,6 +20,7 @@
         <module>session-management-sample</module>
         <module>authority-sample</module>
         <module>simple-example</module>
+        <module>captcha-example</module>
     </modules>
     
     <properties>

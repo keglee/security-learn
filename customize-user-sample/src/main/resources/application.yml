@@ -6,3 +6,9 @@ spring:
 
 customize:
   user: 2
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+

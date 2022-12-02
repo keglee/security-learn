@@ -18,10 +18,10 @@ import java.util.Map;
 /**
  *
  **/
-public class LoginFilter extends AbstractAuthenticationProcessingFilter {
+public class JsonLoginFilter extends AbstractAuthenticationProcessingFilter {
     
-    public LoginFilter() {
-        super(new AntPathRequestMatcher("/login2", "POST"));
+    public JsonLoginFilter() {
+        super(new AntPathRequestMatcher("/login", "POST"));
     }
     
     @Override
