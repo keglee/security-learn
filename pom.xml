@@ -10,14 +10,15 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>simple-example</module>
+        <module>json-login-sample</module>
+        
         <module>multiple-datasource-sample</module>
         <module>object-post-processor-sample</module>
         <module>customize-user-sample</module>
         <module>multiple-chain-sample</module>
-        <module>json-login-sample</module>
         <module>password-upgrade-sample</module>
         <module>session-management-sample</module>
-        <module>authority-sample</module>
+        <module>authority-example</module>
         <module>captcha-example</module>
     </modules>
     

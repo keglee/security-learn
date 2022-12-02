@@ -13,7 +13,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // 开启访问限制, 且所有请求都需要进行认证
-        http.authorizeRequests().anyRequest().authenticated();
+        http.authorizeRequests()
+                .anyRequest().authenticated();
         // 开启表单登录
         http.formLogin();
     }
